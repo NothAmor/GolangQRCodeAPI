@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NothAmor QR Code API Service</title>
+</head>
+<body>
+    <style>
+
+    </style>
+    <h1>NothAmor QR Code API Service</h1>
+    <p>使用方法: <br>
+        访问链接: /qr <br>
+        参数说明: <br>
+            data 二维码内包含的数据 <br>
+            size 二维码图片的大小, size参数要求必须为整数，且小于等于1000 <br>
+            type 二维码返回参数的格式, 可以为空, 默认直接返回图片 <br>
+                type的允许值: image, json (image为直接返回图片，json则为返回json串) <br>
+                json返回值示例: {"code":200,"msg":"Success","data":{"image":base64}} <br>
+                其中image值是图片的base64编码 <br>
+        使用示例: /qr?data=https://www.nothamor.cn&size=100&type=image
+    </p>
+</body>
+</html>
