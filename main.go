@@ -58,7 +58,7 @@ func main() {
 			return
 		}
 
-		if intSize >= 1000 {
+		if intSize > 1000 {
 			responseMsg = "size参数不合法，size必须小于等于1000"
 			if returnType == "json" {
 				c.JSON(http.StatusOK, JSONResponse{
